@@ -1,0 +1,39 @@
+body{
+    width: 100%;
+    height: 100%;
+
+    text-align: center;
+    background-color: bisque;
+}
+
+div, button{
+    margin-bottom: 10px;
+}
+
+#everything{
+    text-align: left;
+    width: 30%;
+    margin: auto;
+}
+
+h1{
+    margin-bottom: 80px;
+    font-size: 60px;
+    text-decoration: underline;
+}
+
+#error{
+    color: red;
+}
+
+@media only screen and (max-width: 1025px)  {
+    #everything{
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 670px)  {
+    #everything{
+        width: 70%;
+    }
+}

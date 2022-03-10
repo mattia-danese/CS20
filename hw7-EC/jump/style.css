@@ -1,0 +1,65 @@
+body{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+#form1{
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: solid thin black;
+    width: 60%;
+    display: flex;
+    padding: 15px;
+}
+
+#form1 input, #form1 button{
+   flex: 1;
+   font-size: x-large;
+   padding: 5px;
+   border-radius: 20px;
+}
+
+#form1 input{
+    border: thin solid blue;
+    width: 30%;
+}
+
+#form1 button{
+    border: thin solid red;
+    width: 30%;
+}
+
+#in1{
+    margin-right: 5%;
+}
+
+#in2{
+    margin-left: 5%;
+}
+/* ---------------------------------------- */
+#form2{
+    border: solid thin black;
+    width: 10%;
+}
+/* ---------------------------------------- */
+
+#part3{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+img{
+    width: 200px;
+}
+
+
+
+
+
+
+

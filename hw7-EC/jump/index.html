@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jump</title>
+
+    <link rel = "stylesheet" href = "./style.css" />
+    <style></style>
+    <script src="./script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+    <script>
+        var images = [
+            {src: "./images/apple.png",      time: 2000},
+            {src: "./images/banana.png",     time: 2000},
+            {src: "./images/pear.png",       time: 2000},
+            {src: "./images/peach.png",      time: 2000},
+            {src: "./images/strawberry.png", time: 2000},
+        ];
+
+        var stopping = false;
+        var nextIdx = 0;
+
+        var show = function (i) {
+            console.log("here4");
+            $("img").attr('src', images[i].src);
+            
+            if (stopping){
+                $("img").css('opacity','1.0');
+                $("img").css('display','inline');
+                
+                return;
+            }
+
+            $("img").fadeIn(2000, function() {
+                $("img").fadeOut(2000, function(){
+                    nextIdx = (i < images.length-1)? i+1 : 0;
+                    show(nextIdx);
+                });
+            });
+        };
+
+        var start = function () {
+            stopping = false;
+            $("img").fadeOut(2000, function(){
+                setTimeout(show(nextIdx+1), 1);
+            });
+        };
+        
+        var stop = function () {
+            console.log("stopping");
+            stopping = true;
+        };
+        
+        
+        $(document).ready(function(){
+            $("#start").click(start);
+            $("#stop").click(stop);
+            console.log("here");
+        });
+    </script>
+
+</head>
+<body>
+    <form id="form1">
+        <input id="in1" name="in1" type="text" />
+        <button id="but"type='button' onclick="jump();">JUMP > </button>
+        <input id="in2" name="in2" type="text" />
+    </form>
+
+
+    <form id="form2">
+        <input type="checkbox" id="all" name="all" onclick="checking();"//>
+        <label for="all" id="all_label"> Check all </label>
+
+        <br>
+        <br>
+
+        <input type="checkbox" id="first" name="first" class="indiv"/> 
+        <label for="first"> first </label>
+
+        <br>
+        
+        <input type="checkbox" id="second" name="second" class="indiv"/>
+        <label for="second"> second </label> 
+
+        <br>
+        
+        <input type="checkbox" id="third" name="third" class="indiv"/> 
+        <label for="third"> third </label> 
+
+        <br>
+       
+        <input type="checkbox" id="fourth" name="fourth" class="indiv"/> 
+        <label for="fourth"> fourth </label> 
+    </form>
+
+    <div id="part3">
+        <img src="./images/apple.png"/>
+
+        <button id="start">Start</button>
+        <button id="stop">Stop</button> 
+    </div>
+
+</body>
+</html>
