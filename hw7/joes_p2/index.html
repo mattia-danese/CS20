@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joe's Part 2</title>
+
+    <link rel = "stylesheet" href = "./style.css" />
+    <style></style>
+    <script src="./script.js"></script>
+
+</head>
+<body>
+    <h1>Joe's Hotdogs</h1>
+
+    <div id="everything">
+        <form>
+            <div id="hotdogs">
+                <span>How many hotdogs?</span>
+                <select name="hotdogs" id="selecthotdogs">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="10">10</option>
+                    <option value="15">15</option>
+                    <option value="20">20</option>
+                </select>
+                <span>Price per Hotdog: </span>
+            </div>
+
+            <div id="fries">
+                <span>How many fries?</span>
+                <select name="fries" id="selectfries">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="10">10</option>
+                    <option value="15">15</option>
+                    <option value="20">20</option>
+                </select>
+                <span>Price per Fries: </span>
+            </div>
+            
+            <div id="sodas">
+                <span>How many fries?</span>
+                <select name="sodas" id="selectsodas">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="10">10</option>
+                    <option value="15">15</option>
+                    <option value="20">20</option>
+                </select>
+                <span>Price per Sodas: </span>
+            </div>
+
+            <button type="button" onclick="add();">Add Items</button>
+        </form>
+
+        <div id="error" style="display: none;">Please select at least one item to add to your order.</div>
+
+        <hr>
+
+        <div id="details">
+            <div>Hotdogs: 
+                <span id="numhotdogs">0</span> 
+                ($<span id="moneyhotdogs">0</span>)
+            </div>
+
+            <div>Fries: 
+                <span id="numfries">0</span> 
+                ($<span id="moneyfries">0</span>)
+            </div>
+
+            <div>Sodas: 
+                <span id="numsodas">0</span> 
+                ($<span id="moneysodas">0</span>)
+            </div>
+
+            <button type="button" onclick="reset();">Clear Added Items</button>
+        </div>
+
+        <hr>
+
+        <div>Subtotal: $<span id="subtotal">0</span></div>
+        <div id="discount1">Please spend $20 to qualify for Joe's special offer of a 10% coupon.</div>
+        <div>Discount Amount: $<span id="discount2">0.00</span></div>
+        <div>Tax: $<span id="tax">0</span></div>
+        <div>Total: $<span id="total">0</span></div>
+    </div>
+
+
+</body>
+</html>
