@@ -1,0 +1,11 @@
+GitHub URL  : https://mattia-danese.github.io/comp20-assignment1/index.html
+cpannel URL : http://mattiad.sgedu.site
+
+
+
+1. An advantage to using GitHub (pages) is free hosting
+   An advantage to using cpanel is that it can handle server-side programming
+
+2. I prefer GitHub pages because it is integrated with GitHub, which is a very useful product-management/version-control tool
+
+3. The most satisfying part of this assignment was getting a webpage posted on the internet and being able to go to it with a browser. 

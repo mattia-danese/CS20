@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mattia's Trattoria</title>
+
+    <link rel = "stylesheet" href = "./styles/style.css" />
+
+    <style>
+        #reserve{
+            text-align: center;
+            color: white;
+            margin-top: 15vh;
+        }
+
+        #reserve h2{
+            font-size: 6vh;
+            text-decoration: underline;
+        }
+
+        #reserve div{
+            padding-bottom: 4vh;
+        }
+
+        #reserve input, #reserve textarea, #sub{
+            width:350px;
+            height: 4.5vh;
+            border-radius: 10px;
+            background-color: #F3E7C9;
+            font-size: large;
+        }
+
+        #reserve textarea{
+            height: 10vh;
+        }
+
+        #sub{
+            background-color: black;
+            color: white;
+            margin-bottom: 12vh;
+        }
+
+        #reserve span{
+            text-decoration: underline;
+        }
+
+        @media only screen and (max-width: 825px)  {
+            #reserve input, #reserve textarea, #sub {
+                width: 42vw;
+            }    
+        }
+    </style>
+</head>
+<body>
+    <div id='nav'>
+        <a id="logo" href="index.html"> 
+            <img id = "logo-pic" src="images/resto.jpg" />
+        </a>
+        <a id="menu" href="menu.html"> Menu </a>
+        <a id="res" href="reservation.html"> Reservations </a>
+        <a id="contact" href="contact.html"> Contact Us &#38; About Us </a>
+    </div>
+
+    <div id="reserve">
+        <h2> Make a Reservation </h2>
+        <div>
+            Although we welcome walk-ins, reservations are always recommended.
+            <br>
+            Please use the form below to reserve a table for your party.
+            <br>
+            We look forward to exceeding your expectations. See you soon!
+            <br>
+            <br>
+            Booking a party of 10 or more guests? Please call us instead at <span> (888)-888-8888</span>.
+            <br>
+        </div>
+        <form>
+            <input type="text" name="name" placeholder= "  Name" required="1">
+            <br>
+            <br>
+            <input type="email" name="email" placeholder= "  Email"required="1">
+            <br>
+            <br>
+            <input type="text" name="number" placeholder = "  Phone Number" required="1">
+            <br>
+            <br>
+            <textarea placeholder=" Number of people, date, and time"></textarea>
+            <br>
+            <br>
+            <button id = "sub" type = "submit" value = "Submit"> Submit </button>
+        </form> 
+
+    </div>
+
+    <footer>
+        <div> Mattia's Trattoria &#169;</div>
+        <div> 258 Boston Ave, Medford, MA 02155 </div>
+        <div> (888)-888-8888 </div>
+    </footer>
+</body>
+</html>

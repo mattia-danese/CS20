@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href = "style.css" ?>
+
+<Songs>
+    <Columns>
+        <artists>Artists</artists>
+        <title>Title</title>
+        <genres>Genres</genres>
+        <year>Year</year>
+    </Columns>
+
+    <Song>
+        <artists>
+            <artist>Christina Perri</artist>
+        </artists>
+        <title>A Thousand Years</title>
+        <genres>
+            <genre>Pop</genre>
+        </genres>
+        <year>2011</year>
+    </Song>
+
+    <Song>
+        <artists>
+            <artist>Bon Jovi</artist>
+        </artists>
+        <title>Livin' on a Prayer</title>
+        <genres>
+            <genre>Rock</genre>
+        </genres>
+        <year>1986</year>
+    </Song>
+
+    <Song>
+        <artists>
+            <artist>Bruno Mars</artist>
+        </artists>
+        <title>Marry You</title>
+        <genres>
+            <genre>R&amp;B, Soul</genre>
+        </genres>
+        <year>2011</year>
+    </Song>
+
+    <Song>
+        <artists>
+            <artist>Ed Sheeran</artist>
+        </artists>
+        <title>Perfect</title>
+        <genres>
+            <genre>Pop</genre>
+        </genres>
+        <year>2017</year>
+    </Song>
+
+    <Song>
+        <artists>
+            <artist>John Legend</artist>
+        </artists>
+        <title>All of Me</title>
+        <genres>
+            <genre>R&amp;B/Soul</genre>
+       </genres>
+        <year>2013</year>
+    </Song>
+
+    <Song>
+        <artists>
+            <artist>Bad Bunny</artist>
+            <artist>Sech</artist>
+        </artists>
+        <title>Ignorantes</title>
+        <genres>
+            <genre>Reggaetón</genre>
+        </genres>
+        <year>2020</year>
+    </Song>
+
+    <Song>
+        <artists>
+            <artist>Louis Armstrong</artist>
+        </artists>
+        <title>What a Wonderful World</title>
+        <genres>
+            <genre>Holiday</genre>
+        </genres>
+        <year>1968</year>
+    </Song>
+
+    <Song>
+        <artists>
+            <artist>The Beatles</artist>
+        </artists>
+        <title>I Want to Hold Your Hand</title>
+        <genres>
+            <genre>R&amp;B/Soul</genre>
+            <genre>Alternative/Indie</genre>
+            <genre>Children's Music</genre>
+            <genre>Folk</genre>
+            <genre>Pop</genre>
+            <genre>Rock</genre>
+        </genres>
+        <year>1964</year>
+    </Song>
+
+    <Song>
+        <artists>
+            <artist>Miles Davis</artist>
+        </artists>
+        <title>All Blues</title>
+        <genres>
+            <genre>Jazz</genre>
+        </genres>
+        <year>1959</year>
+    </Song>
+
+    <Song>
+        <artists>
+            <artist>Jack Brooks</artist>
+            <artist>Harry Warren</artist>
+        </artists>
+        <title>That's Amore</title>
+        <genres>
+            <genre>Pop</genre>
+            <genre>Holiday</genre>
+        </genres>
+        <year>1953</year>
+    </Song>
+</Songs>

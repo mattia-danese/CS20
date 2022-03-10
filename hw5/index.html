@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lottery Sim</title>
+
+    <link rel = "stylesheet" href = "./style.css" />
+    <style></style>
+    <script src="./script.js"></script>
+
+</head>
+<body>
+    <h1>Lottery Sim</h1>
+
+    <button onclick="game();">Click to Play!</button>
+
+    <h2 id="load">Picking Your Numbers</h2>
+    
+    <div id="container">
+        <hr>
+
+        <div>Your Pick: <span id="pick"></span></div>
+        <div>Your Sorted Pick: <span id="pick_sorted"></span></div>
+        <div>Your Lucky Ball: <span id="lucky_ball"></span></div>
+
+        <hr>
+
+        <div id="winning_nums">
+            The Winning Numbers and <span class="lucky">Lucky Ball</span> are: 
+            <span>12, 15, 24, 35, 48, <span class="lucky">3</span></span>
+        </div>
+
+        <hr>
+
+        <div>Number of 'Pick' matches: <span id="matches"></span></div>
+        <div>Did your Lucky Ball match? <span id="match_lucky"></span></div>
+
+        <hr>
+
+        <div>Your payout: <span id="payout"></span></div>
+
+        <hr>
+    </div>
+</body>
+</html>

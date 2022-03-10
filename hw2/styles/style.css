@@ -1,0 +1,88 @@
+body,html, h1, h3 {
+    margin: 0px;
+    padding: 0px;
+}
+* {
+    box-sizing: border-box;
+    border: none;
+}
+
+body {
+    z-index: -100;
+    background: url(https://media.newyorker.com/photos/5d55c7e80ed6a400098d6183/master/pass/190826_r34805.jpg);
+}
+
+#nav {
+    height: 10%;
+    width: 100%;
+    display: table;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    margin: none;
+
+
+    background-color: black;
+    text-align: right;
+    
+}
+
+#logo{
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    width: 10%;
+}
+
+
+#menu, #res, #contact{
+    z-index: 1000;
+    width: 10%;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    font-size: x-large;
+    text-decoration: none;
+    color: white;
+
+}
+
+#logo-pic{
+    width: 50px;
+    height: 50px;
+    border-radius: 20px;
+}
+
+#menu:hover, #res:hover, #contact:hover{
+    text-decoration:underline;
+    color: #D5BA77;
+}
+
+#logo-pic:hover{
+    width: 55px;
+    height: 55px;
+}
+
+footer {
+    position: fixed;
+    width: 100%;
+    height: 10%;
+    bottom: 0;
+    left: 0;
+    margin: none;
+    background: black;
+
+    
+    z-index: 1000;
+    color: white;
+    font: xx-large;
+
+    text-align: center;
+    display: table;
+}
+
+footer div{
+    display: table-cell;
+    vertical-align: middle;
+}

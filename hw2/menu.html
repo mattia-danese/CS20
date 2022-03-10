@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mattia's Trattoria</title>
+    
+    <link rel = "stylesheet" href = "./styles/style.css" />
+
+    <style>
+        #food{
+            text-align: center;
+            color: white;
+            margin-top: 11vh;
+            display: table;
+            padding-bottom: 12vh;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        #food h2{
+            font-size: xx-large;
+            text-decoration: underline;
+        }
+
+        #starters, #maincourse, #desserts{
+            display: table-cell;
+        }
+
+        .plate{
+            font-size: large;
+        }
+        .description{
+            margin-bottom: 2.75%;
+        }
+
+        @media only screen and (max-width: 825px)  {
+            #food{
+                display: block;
+                text-align: center;
+            }
+
+            #starters, #maincourse, #desserts{
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id='nav'>
+        <a id="logo" href="index.html"> 
+            <img id = "logo-pic" src="images/resto.jpg" />
+        </a>
+        <a id="menu" href="###"> Menu </a>
+        <a id="res" href="reservation.html"> Reservations </a>
+        <a id="contact" href="contact.html"> Contact Us &#38; About Us </a>
+    </div>
+
+    <div id="food">
+        <div id="starters">
+            <h2> Starters </h2>
+            
+            <div class="plate">ZUPPA DI POMODORO E BASILICO</div>
+            <div class="description">Homemade tomato soup, basil, touch of cream</div>
+
+            <div class="plate">POLPETTE E PARMIGIANO</div>
+            <div class="description">Toasted country bread, fresh chopped tomatoes, garlic, fresh basil</div>
+
+            <div class="plate">MELANZANE PARMIGIANA</div>
+            <div class="description">Breaded eggplant, fresh mozzarella, house pomodoro</div>
+
+            <div class="plate">POLENTA</div>
+            <div class="description">Mascarpone, Parmigiano</div>
+
+        </div>
+
+        <br>
+
+        <div id="maincourse">
+            <h2> Main Dishes </h2>
+
+            <div class="plate">MISTA VERDE</div>
+            <div class="description">Fresh mixed green salad, carrots, cherry tomatoes, cucumbers, balsamic vinaigrette</div>
+
+            <div class="plate">MARGHERITA PIZZA</div>
+            <div class="description">Tomato, mozzarella, fresh basil, touch of parmigiano reggiano</div>
+
+            <div class="plate">FIORENTINA PIZZA</div>
+            <div class="description">Mozzarella, spinach, parmigiano reggiano, garlic</div>
+
+            <div class="plate">CAPRINO PIZZA</div>
+            <div class="description">Goat cheese, mozzarella, roasted eggplant, baby arugula, red pepper, black olives</div>
+
+            <div class="plate">TARTUFO NERO</div>
+            <div class="description">Robiola, fontina, black truffle, truffle cheese, drizzled with truffle oil</div>
+
+            <div class="plate">PENNE ALLA VODKA</div>
+            <div class="description">Tomato, touch of cream, splash of vodka</div>
+
+            <div class="plate">RAVIOLI ALLA SALVIA</div>
+            <div class="description">Spinach raviolis filled with spinach, ricotta, parmigiano reggiano, brown butter, sage</div>
+
+            <div class="plate">PETTO DI POLLO ALLA PARMIGIANA</div>
+            <div class="description">Organic chicken breast pounded & breaded, fresh mozzarella, house pomodoro, served with spaghetti</div>
+
+            <!-- <div class="plate">GRILLED SALMON</div>
+            <div class="description">Cannellini beans, roasted red peppers, caramelized onion, basil pesto, spinach</div> -->
+
+        </div>
+
+        <br>
+
+        <div id="desserts">
+            <h2> Desserts </h2>
+            
+            <div class="plate">TIRAMISU</div>
+            <div class="description">Lady fingers, mascarpone, espresso, cocoa dusting on top</div>
+
+            <div class="plate">LIMONE</div>
+            <div class="description">Meyer lemon curd, black mission fig, pomegranate, meringue</div>
+
+            <div class="plate">BISCOTTI</div>
+            <div class="description">Fennel orange cookies</div>
+
+            <div class="plate">GELATO e SORBETTO</div>
+            <div class="description">Pastry chef’s daily selection</div>
+
+        </div>
+    </div>
+
+
+    <footer>
+        <div> Mattia's Trattoria &#169;</div>
+        <div> 258 Boston Ave, Medford, MA 02155 </div>
+        <div> (888)-888-8888 </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mattia's Trattoria</title>
+
+    <link rel = "stylesheet" href = "./styles/style.css" />
+
+    <style>
+        #aboutcontact{
+            color: white;
+            margin-top: 15vh;
+            display: flex;
+        }
+
+        #about img {
+            height: 20vh;
+            margin-top: 5vh;
+            border-radius: 100px;
+        }
+
+        #about, #c{
+            flex: 1;
+            text-align: center;
+            margin: 5%;
+            margin-top: 0%;
+        }
+
+        #aboutcontact h2{
+            font-size: 6vh;
+            text-decoration: underline;
+        }
+
+        #c input, #c textarea, #sub2{
+            width:350px;
+            height: 4vh;
+            border-radius: 10px;
+            background-color: #F3E7C9;
+            font-size: large;
+        }
+
+        #c textarea{
+            height: 10vh;
+        }
+
+        #sub2{
+            background-color: black;
+            color: white;
+        }
+
+        @media only screen and (max-width: 1070px)  {
+            #aboutcontact{
+                display: block;
+                text-align: center;
+                padding-bottom: 10vh;
+            }
+
+            #about, #c {
+                display: block;
+            }
+
+            #c input, #c textarea, #sub2{
+                width: 42vw;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id='nav'>
+        <a id="logo" href="index.html"> 
+            <img id = "logo-pic" src="images/resto.jpg" />
+        </a>
+        <a id="menu" href="menu.html"> Menu </a>
+        <a id="res" href="reservation.html"> Reservations </a>
+        <a id="contact" href="contact.html"> Contact Us  &#38; About Us</a>
+    </div>
+
+    <div id="aboutcontact">
+    
+        <div id = "about">
+            <h2> About Us </h2>
+            
+            <p>
+                Mattia's Trattoria is a new Italian restaurant inspired by the feel of an Italian neighborhood trattoria. Perched between Medford and Somerville, Mattia's Trattoria is a cozy yet sophisticated neighborhood destination. For the head chef Mattia, who lives right up the street, Mattia's Trattoria is an extension of his living room. He's brought together his love of great food, easy hospitality and chic vibe to create a lively space that is welcoming to all looking for a memorable meal. With dishes that lean heavily on Italian flavors but are not restricted by any rules of the cuisine, the food is unpretentious and delicious. A dual-opening fireplace wrapped in white ceramic, an oversized salvaged communal table designed for side-by-side dining and rich leather banquets are just some of the design elements that make up Mattia's Trattoria charm. 
+            </p>
+
+            <img src="images/chef.jpg" />
+
+        </div>
+
+        <div id = "c">
+            <h2> Contact Us </h2>
+            
+            <p>
+                Thank you for visiting our website. 
+                <br>
+                If you have any questions, please feel free to send us a message using the form below. 
+                <br>
+                Someone from our team will get back to you shortly.
+            </p>
+
+            <form>
+                <input type="text" name="name" placeholder= "  Name" required="1">
+                <br>
+                <br>
+                <input type="email" name="email" placeholder= "  Email"required="1">
+                <br>
+                <br>
+                <input type="text" name="number" placeholder = "  Phone Number" required="1">
+                <br>
+                <br>
+                <textarea placeholder=" Message..."></textarea>
+                <br>
+                <br>
+                <button id = "sub2" type = "submit" value = "Submit"> Submit </button>
+            </form> 
+
+        </div>
+    <div>
+
+    <footer>
+        <div> Mattia's Trattoria &#169;</div>
+        <div> 258 Boston Ave, Medford, MA 02155 </div>
+        <div> (888)-888-8888 </div>
+    </footer>
+</body>
+</html>

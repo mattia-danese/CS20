@@ -1,0 +1,48 @@
+Songs{
+    width: 70%;
+    margin: auto;
+    display: table;
+    margin-top: 10%;
+}
+
+Columns {
+    font-size: larger;
+    font-weight: bold;
+}
+
+
+
+Song, Columns{
+    display: table;
+    width: 100%;
+    border: thin solid black;
+}
+
+artists, title, genres, year{
+    display: table-cell;
+    width: 25%;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 7px;
+    
+}
+
+genre, artist{
+    display: block;
+}
+
+title{
+    background-color: lightblue;
+}
+
+artists{
+    background-color: lightcyan;
+}
+
+genres{
+    background-color: lightgoldenrodyellow;
+}
+
+year{
+    background-color: lightpink;
+}

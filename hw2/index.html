@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mattia's Trattoria</title>
+
+    <link rel = "stylesheet" href = "./styles/style.css" />
+
+    <style>
+        #main{
+            position: absolute;
+            top: 25%;
+            left: 50%;
+            transform: translate(-50%, 0);
+            width: 100%;
+            text-align: center;
+        }
+
+        #main h1, #main h3, #days, #times {
+            color: white;
+            z-index: 100;    
+        }
+
+        #main h1 {
+            font-size: 12vh;
+        }
+
+        #main h3, br {
+            font-size: 3vh;
+        }
+
+        #days, #times{
+            display: inline-block;
+            text-align: left;
+            font: small;
+            font-size: 2vh;
+            margin-top: 1vh;
+        }
+
+        #hours div{
+            margin-top: 0.5vh; 
+        }
+
+        @media only screen and (max-width: 825px)  {
+            #main{
+                padding-bottom: 12vh;
+                top: 15%;
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <div id='nav'>
+        <a id="logo" href="index.html"> 
+            <img id = "logo-pic" src="images/resto.jpg" />
+        </a>
+        <a id="menu" href="menu.html"> Menu </a>
+        <a id="res" href="reservation.html"> Reservations </a>
+        <a id="contact" href="contact.html"> Contact Us  &#38; About Us</a>
+    </div>
+
+
+    <div id="main">
+        <h1> Mattia's Trattoria </h1>
+
+        <br>
+
+        <h3> 258 Boston Ave </h3>
+        <h3> Medford, MA 02155 </h3>
+        <h3> (888)-888-8888 </h3>
+
+        <br>
+        <br>
+
+        <h3> Hours of Operation </h3>
+        <div id="hours">
+            <div>
+                <div id="days">
+                    <div> Monday </div>
+                    <div> Tuesday </div>
+                    <div> Wednesday </div>
+                    <div> Thursday </div>
+                    <div> Friday </div>
+                    <div> Saturday </div>
+                    <div> Sunday </div>
+                </div>
+
+                <div id="times">
+                    <div> Closed </div>
+                    <div> Closed </div>
+                    <div> Closed </div>
+                    <div> 4-10PM </div>
+                    <div> 4-2AM </div>
+                    <div> 4-2AM </div>
+                    <div> Closed </div>
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        <div> Mattia's Trattoria &#169;</div>
+        <div> 258 Boston Ave, Medford, MA 02155 </div>
+        <div> (888)-888-8888 </div>
+    </footer>
+
+
+</body>
+</html>

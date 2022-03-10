@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON</title>
+
+    <link rel = "stylesheet" href = "./style.css" />
+    <script src="./script.js"></script>
+    <script src="./data.js"></script>
+
+</head>
+<body onload="initialize();">
+    <h3>JSON Data as a Raw String:</h3>
+    <div id="raw"></div>
+
+
+    <h3>User Friendly Display of JSON Data:</h3>
+    <div id="nice"></div>
+
+
+    <h3>Filter JSON Data:</h3>
+    <form>
+        <span>Pick the genre you want to filter by:</span>
+        <select name="genres" id="genres">
+            <option value="Pop">Pop</option>
+            <option value="Rock">Rock</option>
+            <option value="R&B/Soul">R&B/Soul</option>
+            <option value="Reggaetón">Reggaetón</option>
+            <option value="Holiday">Holiday</option>
+            <option value="Alternative/Indie">Alternative/Indie</option>
+            <option value="Children's Music">Children's Music</option>
+            <option value="Folk">Folk</option>
+            <option value="Jazz">Jazz</option>
+        </select>
+
+        <button type="button" onclick="filter();">Filter</button>
+    </form>
+    <br>
+    <div id="filter"></div>
+
+</body>
+</html>
