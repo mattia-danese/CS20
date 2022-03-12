@@ -1,0 +1,35 @@
+body{
+    text-align: left;
+    background-color: #E8ECFF;
+}
+
+h1{
+    text-align: center;
+    text-decoration: underline;
+}
+
+body:nth-child(2){
+    text-align: center;
+}
+
+.container{
+    display: table;
+    text-align: center;
+    margin: auto;
+}
+
+#c1, #c2{
+    display: table-cell;
+}
+
+#filter div{
+    float: left;
+}
+
+button{
+    padding: 10px;
+    border-radius: 10px;
+    font-size: large;
+    background-color: purple;
+    color: white;
+}

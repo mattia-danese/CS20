@@ -26,17 +26,22 @@ function filter() {
     let genre = document.getElementById("genres").value;
     let songs = data.Songs;
     let output = "";
+    let count = 1;
 
     for(i=0; i < songs.length; i++){
-        output += "<div>";
         let song = songs[i];
-
         if(song.genres.includes(genre)){
-            output += song.title + "<br>";
+            output += "<div>";
+            
+            output += (count + ". ");
+            output += song.title;
+            count += 1;
+            output += "</div>";
+            output += "<br>"; 
         }
-        output += "</div>";
     }
 
     document.getElementById("filter").innerHTML = output;
+    document.getElementById("filter").style = "margin-bottom: 30px;";
 
 }

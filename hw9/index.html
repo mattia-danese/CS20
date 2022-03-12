@@ -11,33 +11,39 @@
 
 </head>
 <body onload="initialize();">
+    <h1>JSON Song List</h1>
+    
     <h3>JSON Data as a Raw String:</h3>
     <div id="raw"></div>
 
 
-    <h3>User Friendly Display of JSON Data:</h3>
-    <div id="nice"></div>
+    <div class="container">
+        <div id="c1">
+            <h3>User Friendly Display of JSON Data:</h3>
+            <div id="nice"></div>
+        </div>
 
-
-    <h3>Filter JSON Data:</h3>
-    <form>
-        <span>Pick the genre you want to filter by:</span>
-        <select name="genres" id="genres">
-            <option value="Pop">Pop</option>
-            <option value="Rock">Rock</option>
-            <option value="R&B/Soul">R&B/Soul</option>
-            <option value="Reggaetón">Reggaetón</option>
-            <option value="Holiday">Holiday</option>
-            <option value="Alternative/Indie">Alternative/Indie</option>
-            <option value="Children's Music">Children's Music</option>
-            <option value="Folk">Folk</option>
-            <option value="Jazz">Jazz</option>
-        </select>
-
-        <button type="button" onclick="filter();">Filter</button>
-    </form>
-    <br>
-    <div id="filter"></div>
-
+        <div id="c2">
+            <h3>Filter JSON Data:</h3>
+            <form>
+                <span>Pick the genre you want to filter by:</span>
+                <select name="genres" id="genres">
+                    <option value="Pop">Pop</option>
+                    <option value="Rock">Rock</option>
+                    <option value="R&B/Soul">R&B/Soul</option>
+                    <option value="Reggaetón">Reggaetón</option>
+                    <option value="Holiday">Holiday</option>
+                    <option value="Alternative/Indie">Alternative/Indie</option>
+                    <option value="Children's Music">Children's Music</option>
+                    <option value="Folk">Folk</option>
+                    <option value="Jazz">Jazz</option>
+                </select>
+        
+                <button type="button" onclick="filter();">Filter</button>
+            </form>
+            <br>
+            <div id="filter"></div>
+        </div>
+    </div>
 </body>
 </html>
