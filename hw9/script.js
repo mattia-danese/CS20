@@ -1,4 +1,12 @@
-function initialize(){
+async function getData(){
+    const res = await fetch('https://mattia-danese.github.io/CS20/hw9/data.json');
+    let data = await res.json();
+    return data
+}
+
+async function initialize(){
+    let data = await getData();
+
     str =  JSON.stringify(data);
     document.getElementById("raw").innerHTML = str;
 
@@ -22,7 +30,9 @@ function initialize(){
     niceOutput();
 }
 
-function filter() {
+async function filter() {
+    let data = await getData();
+
     let genre = document.getElementById("genres").value;
     let songs = data.Songs;
     let output = "";
@@ -43,5 +53,4 @@ function filter() {
 
     document.getElementById("filter").innerHTML = output;
     document.getElementById("filter").style = "margin-bottom: 30px;";
-
 }
