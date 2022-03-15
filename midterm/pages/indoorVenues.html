@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SteerMyEvent</title>
+        
+        <link rel = "stylesheet" href = "../styles/style.css" />
+        <style>
+            .card {
+            /* Add shadows to create the "card" effect */
+            width: 50%;
+            margin: auto;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            /* margin-right: 30px;
+            margin-left: 30px; */
+            box-shadow: 0 8px 16px 0 #800020;
+            transition: 0.5s;
+            }
+    
+            /* On mouse-over, add a deeper shadow */
+            .card:hover {
+            box-shadow: 0 16px 24px 0 #800020;
+            }
+    
+    /* Add some padding inside the card container */
+    .container {
+      padding: 10px 20px;
+    }
+
+    .button1 {
+        background: blueviolet;
+        border-radius: 999px;
+        box-shadow: blueviolet 0 10px 20px -10px;
+        box-sizing: border-box;
+        color: #FFFFFF;
+        cursor: pointer;
+        font-size: 20px;
+        line-height: 34px;
+        opacity: 1;
+        outline: 0 solid transparent;
+        padding: 8px 18px;
+        width: fit-content;
+        border: 0;
+    }
+
+    @media only screen and (max-width: 830px) {
+        .card img{
+            width: 80%;
+            height: 80%;
+        }
+    }
+</style>
+        <script src="###"></script>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100&display=swap" rel="stylesheet">
+    </head>
+<body>
+    <div class="fixed-header">
+        <nav>
+            <ul>
+              <li><a href="home.html">Home</a></li>
+              <li><a href="team.html">Team</a></li>
+              <li><a class="active" href="services.html">Services</a></li>
+              <li><a href="testimonials.html">Testimonials</a></li>
+              <li><a href="inquire.html">Inquiries</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+            Emiliana Fiesta, Chelsea, MA        </nav>
+        <header>
+            <a id="logo" href="home.html" style="position: absolute; top: 80px; right: 30px;"> 
+                <img src="../images/logo.jpg" width="75vw" height="75vw"/>
+            </a>
+            <h1 style="font-size: 5vw; text-align: center; ">SteerMyEvent</h1>
+            <p style="margin-top: 0px; margin-bottom: 15px; color: #C19A6B; font-style: italic;">Driving you crazy with creativity</p>
+        </header>
+    </div>   
+    <div class="content">
+        <p> 
+            COVID-19 forced several otherwise prominent banquet and event spots around Massachusetts to shut owing to strict restrictions and regulations. That is when SteerMyEvent decided to partner with some of the venues that have delivered great successes to our clients over the years, to help them prosper even through these difficult times.
+        </p>
+        <br>
+        <p>
+            While we have several other partners on-call, these are the official ones for whom you can request and obtain quotes on our website. Check them out!
+        </p>
+    
+        <div class="card">
+            <div class="container">
+        <h3>
+            Emiliana Fiesta, Chelsea, MA
+        </h3>
+        <br>
+         <img src="../images/OIP.jpg" width="350px" height="350px"/>
+    </div>
+</div>
+    
+<div class="card">
+    <div class="container">
+        <h3>
+            Knights of Columbus, Melrose, MA
+        </h3>
+        <br>
+        <img src="../images/OIP-3.jpg" width="350px" height="350px"/>
+    </div>
+</div>
+
+<div class="card">
+    <div class="container">
+        <h3>
+            Hamilton Hall, Salem, MA
+        </h3>
+        <br>
+        <img src="../images/OIP-2_2.jpg" width="350px" height="350px"/>
+    </div>
+</div>
+
+<div class="card">
+    <div class="container">
+        <h3>
+            Crystal Ballroom, Somerville, MA
+        </h3>
+        <br>
+        <img src="../images/R.jpg" width="350px" height="350px"/>
+    </div>
+</div>
+
+        <div style="text-align: center; padding: 0.5em 0.5em; font-size: 20px">
+            <button onclick="location.href = 'inquire.html';" id="Button1" class="button1" >Inquire Now <br> </button>
+          </div>
+    </div>
+    <footer class="modified-footer">
+        <div> Steer My Event &#169;</div>
+        <div> All Rights Reserved &#169; </div>
+        <div> (917)-503-0677 </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SteerMyEvent</title>
+
+    <link rel = "stylesheet" href = "../styles/style.css" />
+    <script src="###"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100&display=swap" rel="stylesheet">
+
+    <style>
+        #display{
+            display: flex;
+        }
+
+        #display div{
+            flex: 1;
+            padding: 30px;
+            height: 50vh;
+        }
+
+        #display div img{
+            margin-top: 5%;;
+        }
+
+        a:link#myID, a:visited#myID {
+          color: pink; 
+          background-color: transparent; 
+        }
+        
+        a:hover#myID {
+          color: red;
+          text-decoration: underline;
+        }
+
+        @media only screen and (max-width: 1087px) {
+            #display, #display div {
+                display: block;
+            }
+        }
+    </style>
+
+</head>
+<body>
+    <div class="fixed-header">
+        <nav>
+            <ul>
+              <li><a href="home.html">Home</a></li>
+              <li><a href="team.html">Team</a></li>
+              <li><a class="active" href="services.html">Services</a></li>
+              <li><a href="testimonials.html">Testimonials</a></li>
+              <li><a href="inquire.html">Inquiries</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <header>
+            <a id="logo" href="home.html" style="position: absolute; top: 80px; right: 30px;"> 
+                <img src="../images/logo.jpg" width="75vw" height="75vw"/>
+            </a>
+            <h1 style="font-size: 5vw; text-align: center; ">SteerMyEvent</h1>
+            <p style="margin-top: 0px; margin-bottom: 15px; color: #C19A6B; font-style: italic;">Driving you crazy with creativity</p>
+        </header>
+    </div>
+
+    <div class="content">
+        <p> 
+            At SteerMyEvent, we believe that the first step in organizing a successful event is paved with the selection of the perfect venue. Once we help you decide the venue that best suits your needs, we switch gears to planning the vibe that best fulfills your desires, and voila - we have the perfect event, ready to be unveiled! 
+        </p>
+        <br>
+        <p> 
+            Start by browsing through the different options and partners we have in and around the Greater Boston Area, select one, and once you have a date and time tentatively put in place, our team will work with you to give your event the magical spin it needs to be successful.
+        </p>
+
+        <div id="display"> 
+            <div>
+                <a href="restaurants.html" id="myID">
+                    <h3> Restaurants &amp; Bars </h3>
+                    <img src="../images/o_2.jpg" width="300px" height="250px"/>
+                </a>
+                
+            </div>
+            <div>
+                <a href="indoorVenues.html" id="myID">
+                    <h3> Banquets &amp; Event Spaces</h3>
+                    <img src="../images/Bar_Rest.jpg" width="300px" height="250px"/>
+                </a>
+                
+            </div>
+            <div>                
+                <a href="outdoorVenues.html" id="myID">
+                    <h3> Open Fields &amp; Stadiums </h3>
+                    <img src="../images/Fen.jpeg" width="300px" height="250px"/>
+                </a>
+
+            </div>
+        </div>
+    </div>
+
+    <footer class="modified-footer">
+        <div> Steer My Event </div>
+        <div> All Rights Reserved &#169; </div>
+        <div> (917)-503-0677 </div>
+    </footer>
+</body>
+</html>
