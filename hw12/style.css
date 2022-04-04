@@ -1,0 +1,43 @@
+.userInfo input{
+    position: fixed;
+    left: 100px;
+}
+
+.totalSection input{
+    position: fixed;
+    left: 127px;
+}
+body{
+    width: 100%;
+    height: 100%;
+    background-color: lightgray;
+    overflow-x: hidden;
+    padding-top: 10vh;
+}
+
+header{
+    width: 100%;
+    height: 10vh;
+    background-color: black;
+    display: table;
+    border: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+header h1{
+    color: white;
+    width: 50%;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 535px)  {
+    input{
+        width:100px;
+    }
+
+}
