@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Ticker APP: Part Two</title>
+
+    <style>
+        body {
+            background-color: aliceblue;
+            text-align: center;
+        }
+
+        input {
+            font-size: large;
+        }
+
+    </style>
+
+</head>
+<body>
+    <h1>Stock Ticker APP: Part Two</h1>
+    <br>
+    <br>
+    <h2>Search for a company either by name of stock ticker!</h2>
+    <br>
+    <form method="GET" action="/form_submit" enctype="multipart/form-data">
+        <input type="text" name="search" id="search" required/>
+        <input type="radio" name="name_ticker" id="name" value="name" required/>
+        <label for="name">Company Name</label>
+        <input type="radio" name="name_ticker" id="ticker" value="ticker" required/>
+        <label for="ticker">Ticker</label>
+        <input type="submit" />
+    </form>
+</body>
+</html>
