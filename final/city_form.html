@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SteerMyEvent</title>
+
+</head>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+    header {
+        background-color: black;
+        font-family: 'Merriweather', sans-serif;
+        background-size: 100%;
+        text-align: center;
+        font-size: 20px;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        border-bottom: 4px groove #C19A6B;
+    }
+    h2 {
+        font-family: 'Lobster', sans-serif;
+        text-align: center;
+        color: #FFE66D;
+        font-size: 64px;
+    }
+    nav {
+        font-family: 'Merriweather', sans-serif;
+        color: #F7FFF7;
+        top: 0;
+        font-size: 20px;
+        padding-right: 5%
+    }
+    
+    ul{
+      list-style-type: none;
+      padding-left: 5%;
+    }
+    ul li {
+        display: inline-block;
+        padding-right: 2%;
+        margin-top: 5px;
+    }
+    li a:hover {
+        background-color: silver;
+    }
+    
+    body
+    {
+        background-color: black;
+    }
+    .content {
+        text-align: center;
+        padding-top: 1%;
+    }
+    
+    label{
+    color:  #C19A6B;
+    font-size: 25px;
+    }
+    
+    input{
+    border: 4px groove #C19A6B;
+    border-radius: 4px;
+    font-size: 15px;
+    }
+    
+    .button1, button{
+        background: #C19A6B;
+        border-radius: 999px;
+        box-shadow: #C19A6B 0 10px 20px -10px;
+        font-family: 'Merriweather', sans-serif;
+        box-sizing: border-box;
+        color: #FFFFFF;
+        cursor: pointer;
+        font-size: 20px;
+        line-height: 34px;
+        opacity: 1;
+        outline: 0 solid transparent;
+        padding: 8px 18px;
+        width: fit-content;
+        border: 0;
+    }
+    .Body_One {
+        background-color: black;
+        color: white;
+        border-right:3px black groove;
+        border-left: 3px black groove;
+        border-top:3px black groove;
+        border-bottom:3px black groove;
+        text-align: center;
+        margin-left:10%;
+        margin-right:10%;
+        padding: 2%;
+        display: block;
+}
+
+p {
+  font-family: 'Merriweather', sans-serif;
+  color: #F7FFF7;
+}
+b {
+  font-family: 'Merriweather', sans-serif;
+  font-weight: bold;
+  color: #F7FFF7;
+}
+
+.results {
+    font-family: 'Merriweather', sans-serif;
+    color: #F7FFF7;
+    text-align: center;
+    border-style: solid;
+    border-color: #C19A6B;
+}
+
+footer {
+  font-family: 'Merriweather', sans-serif;
+  text-align: center;
+  color: #F7FFF7;
+  font-size: 16px;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, 0%);
+}
+
+a {
+    color: #F7FFF7;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #0056b3;
+}
+
+</style>
+
+<body>
+    <header>
+        <div class="Top">
+            <h2 style="font-size: 45px;color:white; text-align: center; ">
+                <a href="/">SteerMyEvent</a>
+            </h2>
+        </div>
+    </header>
+
+    <div class="content">
+        <form name = 'browse_venues' method ="POST"  action="/browse_venues" >
+            <p>Feel free to browse venues in the following cities.</p>
+            <input type="radio" id="boston" name="city" value="Boston, MA" required>
+            <label for="boston">Boston</label><br>
+            <input type="radio" id="cambridge" name="city" value="Cambridge, MA">
+            <label for="cambridge">Cambridge</label><br>
+            <input type="radio" id="fenway" name="city" value="Fenway, MA">
+            <label for="fenway">Fenway</label><br>
+            <input type="radio" id="lowell" name="city" value="Lowell, MA">
+            <label for="lowell">Lowell</label><br>
+            <input type="radio" id="somerville" name="city" value="Somerville, MA">
+            <label for="somerville">Somerville</label><br>
+            <input type="radio" id="waltham" name="city" value="Waltham, MA">
+            <label for="waltham">Waltham</label><br>
+            <input type="radio" id="wellesley" name="city" value="Wellesley, MA">
+            <label for="wellesley">Wellesley</label><br>
+            <input type="radio" id="all" name="city" value="all">
+            <label for="all">All</label><br>
+            <br>
+            <input type="submit" class="button1" value="Submit">
+        </form>
+    </div>
+    <br>
+    <br>
+    <footer>
+        SteerMyEvent, LLC
+        <br>
+        510-703-3986
+        <br>
+        steermyevent@gmail.com
+    </footer>
+</body>
+</html>

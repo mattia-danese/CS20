@@ -46,6 +46,8 @@ http.createServer(function (req, res) {
                     }
                 });
             });
+
+            console.log(form);
             
             // connecting to mongo database
             MongoClient.connect(url, { useUnifiedTopology: true },
